@@ -1,0 +1,25 @@
+{
+  "name": "ts_sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node ./dist/app.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "envalid": "^5.0.0",
+    "typescript": "^3.6.3"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^12.7.5",
+    "prettier": "^1.18.2",
+    "tsc-watch": "^4.0.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0"
+  }
+}
