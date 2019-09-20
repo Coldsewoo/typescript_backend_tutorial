@@ -1,0 +1,30 @@
+{
+  "name": "ts_sample",
+  "version": "1.0.0",
+  "description": "https://coldsewoo.com/blog/category/web/backend/Typescript/ 에서 작성된 코드들을 글 별로 모아 두었습니다.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node ./dist/app.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coldsewoo/typescript_backend_tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Coldsewoo/typescript_backend_tutorial/issues"
+  },
+  "homepage": "https://github.com/Coldsewoo/typescript_backend_tutorial#readme",
+  "dependencies": {
+    "typescript": "^3.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "prettier": "^1.18.2",
+    "tsc-watch": "^4.0.0",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0"
+  }
+}
