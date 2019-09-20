@@ -1,0 +1,17 @@
+# Env variables
+# 실제 프로젝트 진행 시에는 아래의 코멘트를 해제하여야 합니다.
+# .env
+
+# Dependencies
+/node_modules
+package-lock.json
+
+# Transplied files
+/dist
+
+# VS Code
+.vscode
+!.vscode/tasks.js
+
+# Misc
+.DS_Store
