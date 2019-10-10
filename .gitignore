@@ -1,6 +1,6 @@
 # Env variables
 # 실제 프로젝트 진행 시에는 아래의 코멘트를 해제하여야 합니다.
-# .env
+.env
 
 # Dependencies
 /node_modules
