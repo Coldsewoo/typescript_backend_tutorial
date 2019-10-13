@@ -6,6 +6,9 @@ import bodyParser = require("body-parser")
 // Controllers interface
 import Controller from "./interfaces/controller.interface"
 
+// middlewares
+import errorMiddleware from "./middleware/error.middleware"
+
 export default class App {
   public app: express.Application
 
@@ -14,6 +17,8 @@ export default class App {
 
     this.initializeMiddlewares()
     this.initializeControllers(Controllers)
+    this.initializeErrorHandler()
+
   }
 
   public listen() {
@@ -34,5 +39,9 @@ export default class App {
     Controllers.forEach((controller: Controller) => {
       this.app.use('/', controller.router)
     })
+  }
+
+  private initializeErrorHandler() {
+    this.app.use(errorMiddleware)
   }
 }
